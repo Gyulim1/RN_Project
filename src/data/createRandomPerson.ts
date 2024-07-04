@@ -1,4 +1,4 @@
-import type {IPerson} from './IPerson';
+import type { IPerson } from './IPerson';
 import * as F from './faker';
 import * as U from './util';
 
@@ -12,7 +12,7 @@ export const createRandomPerson = (): IPerson => {
     email: F.randomEmail(),
     avatar: F.randomAvatarUrl(name),
     image: F.randomImage(),
-    comments: F.randomParagraphs(4),
+    comments: F.randomParagraphs(2),
     counts: {
       comment: U.random(10, 100),
       retweet: U.random(10, 100),
